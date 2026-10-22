@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Docter's Appointment</title>
+    <style>
+        fieldset {
+    
+            /* 1. Change the background color */
+    
+            background-color: #f0f8ff;
+    
+    
+            /* 2. Change the border color (always include width and style) */
+    
+            border: 2px solid #004085;
+    
+    
+            /* 3. Change the text color inside the fieldset */
+    
+            color: #333333;
+    
+    
+            /* Optional: add spacing and rounded corners */
+    
+            padding: 20px;
+    
+            border-radius: 8px;
+    
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>My Docter's Appointment</h1>
+    <p>Fill in the form below to book your appointment! </p>
+    <hr>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label>Your Name</label><br>
+<input type="text" id="name" placeholder="Enter your full name"><br><br>
+
+<label>Patient ID</label><br>
+<input type="password" id="pid" placeholder="Your secret ID"><br><br>
+
+<label>Date of Birth</label><br>
+<input type="date" id="dob"><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+<legend>Your Visit</legend>
+
+<label>Choose your doctor</label><br>
+<select id="doctor">
+    <option value="">-- Select Doctor --</option>
+    <option value="dr lee"> Dr. Lee - Teeth</option>
+    <option value="dr ray"> Dr. Ray - General</option>
+    <option value="dr bryce"> Dr. Bryce - Eyes</option>
+</select><br><br>
+
+<label>Why are you visiting?</label><br>
+<input type="radio" name="reason" value="fever">Fever<br>
+<input type="radio" name="reason" value="cold">Cold<br>
+<input type="radio" name="reason" value="checkup">Checkup<br><input type="radio" name="reason" value="tooth">Tooth Pain<br>
+<br>
+
+<label>Any notes for doctor?</label>
+<textarea id="notes" rows="3" cols="35" placeholder="e.g. I have had a sore throat for 2 days."></textarea><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preffered Day Visit</legend>
+
+            <input type="checkbox"value="mon"> Monday<br>
+<input type="checkbox" value="wen"> Wednesday<br>
+<input type="checkbox" value="fri"> Friday<br>
+
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Book My Appointment">
+
+    </form>
+
+</body>
+</html>
