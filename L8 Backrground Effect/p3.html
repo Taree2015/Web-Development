@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+    <style>
+        /* 1. Define the keyframes */
+
+        @keyframes slide-in {
+
+            from {
+
+                transform: translateX(-100%);
+
+            }
+
+            to {
+
+                transform: translateX(0%);
+
+            }
+
+        }
+
+        /* 2. Apply the animation to an element */
+
+        .box {
+
+            width: 150px;
+
+            height: 150px;
+
+            background-color: #3498db;
+
+            animation: slide-in 1s ease-out;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">Hello World</div>
+
+</body>
+
+</html>
